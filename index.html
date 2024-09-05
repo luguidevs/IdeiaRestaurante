@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./src/script.js" defer></script>
+    <title>Ideia Restaurante</title>
+</head>
+
+<body>
+    <div class="cart-back" id="cart-modal">
+        <div class="cart">
+            <h2 class="cart-title">Meu carrinho</h2>
+
+            <div id="cart-items" class="cart-items">
+
+            </div>
+            <div class="ajeitar">
+                <p class="cart-total-text">Total: <span id="cart-total">0.00</span> </p>
+                <p class="address-label">Endereço de entrega:</p>
+                <input class="address-input" id="address" placeholder="Digite seu endereço completo" type="text">
+                <p class="address-warn" id="address-warn">Digite seu endereço completo!</p>
+
+                <div class="cart-actions">
+                    <button id="close-modal-btn" class="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="checkout-btn">Finalizar pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Ideia Restaurante</h1>
+    </header>
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#lanches">Lanches</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><button id="ativar-cart">Carrinho <span id="contador">(0)</span></button></li>
+        </ul>
+    </nav>
+    <h1 class="title">Lanches</h1>
+    <div id="lanches" class="container">
+        <div class="product">
+            <img src="src/hamb-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p>Um hamburguer saboroso com carne, presunto, queijo, molho especial e verduras.</p>
+                <p>Preço: R$19,99</p>
+                <button data-name="Hamburguer1" data-price="19.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/hamb-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p>Um hamburguer saboroso com carne, presunto, queijo, molho especial e verduras.</p>
+                <p>Preço: R$19,99</p>
+                <button data-name="Hamburguer2" data-price="19.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/hamb-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p>Um hamburguer saboroso com carne, presunto, queijo, molho especial e verduras.</p>
+                <p>Preço: R$19,99</p>
+                <button data-name="Hamburguer3" data-price="19.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/hamb-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p>Um hamburguer saboroso com carne, presunto, queijo, molho especial e verduras.</p>
+                <p>Preço: R$19,99</p>
+                <button data-name="Hamburguer4" data-price="19.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Bebidas</h1>
+    <div id="bebidas" class="container">
+        <div class="product">
+            <img src="src/refri-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p><strong>Preço: R$5.99</strong></p>
+                <button data-name="Coca-lata1" data-price="5.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/refri-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p><strong>Preço: R$5.99</strong></p>
+                <button data-name="Coca-lata2" data-price="5.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/refri-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p><strong>Preço: R$5.99</strong></p>
+                <button data-name="Coca-lata3" data-price="5.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="src/refri-1.png" alt="Produto 1">
+            <div class="descricao-produto">
+                <h2>Produto 1</h2>
+                <p><strong>Preço: R$5.99</strong></p>
+                <button data-name="Coca-lata4" data-price="5.99" class="btn-comprar"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+    <footer id="contato">
+        <div>
+            <p>Entre em contato:</p>
+            <ul class="nav-redes">
+                <li><i class="fa-brands fa-square-whatsapp"></i> +99 (00) 90000-0000</li>
+                <li><i class="fa-brands fa-square-instagram"></i><a href=""> Tal insta</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Loja de Produtos Alimentícios. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
